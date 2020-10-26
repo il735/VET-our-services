@@ -1,0 +1,346 @@
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/subset-FuturaPT-Medium.woff2") format("woff2"),
+      url("../fonts/subset-FuturaPT-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/subset-FuturaPT-Book.woff2") format("woff2"),
+      url("../fonts/subset-FuturaPT-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/subset-FuturaPT-Bold.woff2") format("woff2"),
+      url("../fonts/subset-FuturaPT-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Futura PT", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333333;
+  background-color: #E5E5E5;
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1350px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  /* box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.1); */
+}
+
+.site-header{
+  position: relative;
+  z-index: 1;
+}
+
+.site-header-contact{
+  background-color: #F9F8F8;
+  padding-top: 11px;
+  padding-bottom: 9px;
+}
+
+.contact-content{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding-left: 173px;
+}
+
+.contact-content-item{
+  font-weight: 500;
+  font-size: 14px;
+  color: #333333;
+}
+.address-item{
+  margin-right: 106px;
+}
+.phone-numbers-item{
+  margin-right: 120px;
+}
+
+.contact-content-address{
+  display: flex;
+  align-items: center;
+  font-style: normal;
+}
+
+.contact-content-address::before{
+  content: "";
+  width: 14px;
+  height: 13px;
+  background-image: url("../img/home-img.png");
+  background-size: 14px 13px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 9px;
+}
+
+.tel-number-item{
+  display: flex;
+  align-items: center;
+}
+
+.tel-number-item:not(:last-child){
+  margin-right: 9px;
+}
+
+.tel-numbers{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.tel-numbers-link{
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  color: #333333;
+}
+.tel-numbers-link:hover{
+  color: #FFBD54;
+}
+.tel-numbers-link:active{
+  color: #333333;
+  opacity: 0.6;
+}
+
+.number-1::before{
+  content: "";
+  width: 13px;
+  height: 13px;
+  display: block;
+  background-image: url("../img/tel.png");
+  background-size: 13px 13px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 9px;
+}
+
+.number-2-3::before{
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-image: url("../img/tochka.png");
+  background-size: 4px 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 9px;
+}
+
+.work-times{
+  display: flex;
+  align-items: center;
+}
+.work-times::before{
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-image: url("../img/schedule.png");
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 7px;
+}
+
+.work-time:not(:last-child){
+  margin-right: 17px;
+}
+
+.site-header-menu{
+  padding-top: 15px;
+  padding-bottom: 20px;
+  background-color: #fff;
+}
+
+.site-header-menu-container{
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  position: absolute;
+  z-index: 1;
+  top: 21px;
+  left: 65px;
+  display: block;
+}
+
+.logo-img{
+  display: block;
+}
+.logo:hover{
+  opacity: 0.8;
+}
+.logo:active{
+  opacity: 0.6;
+}
+
+.sitenav{
+  display: flex;
+  align-items: center;
+  margin-left: 262px;
+}
+
+.sitenav-list{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: 200px;
+}
+
+.sitenav-list-item:not(:last-child){
+  margin-right: 55px;
+}
+
+.sitenav-list-link{
+  position: relative;
+  z-index: 1;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333333;
+  text-decoration: none;
+}
+.sitenav-list-link::after{
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: 0.1%;
+  opacity: 0.3;
+  display: none;
+  background-color: yellow;
+}
+.sitenav-list-link:hover::after{
+  display: block;
+}
+.sitenav-list-link:active{
+  opacity: 0.6;
+}
+
+.sitenav-list-item-active{
+  display: flex;
+  align-items: center;
+}
+.sitenav-list-item-active::before{
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/fish.png");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 12px;
+}
+
+.give-questions{
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333333;
+  white-space: nowrap;
+}
+
+.give-questions-group{
+  display: flex;
+  align-items: center;
+}
+.give-questions-group::before{
+  content: "";
+  width: 23px;
+  height: 21px;
+  display: block;
+  background-image: url("../img/lapa.png");
+  background-size: 23px 21px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+
+
+  body{
+    background-image: url("../img/bg@2x.png");
+  }
+
+  .contact-content-address::before{
+    background-image: url("../img/home-img@2x.png");
+  }
+
+  .number-1::before{
+    background-image: url("../img/tel@2x.png");
+  }
+
+  .number-2-3::before{
+    background-image: url("../img/tochka@2x.png");
+  }
+
+  .sitenav-list-link-active::before{
+    background-image: url("../img/fish@2x.png");
+  }
+
+  .give-questions-group::before{
+    background-image: url("../img/lapa@2x.png");
+  }
+}
