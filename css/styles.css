@@ -210,7 +210,7 @@ img {
   position: absolute;
   z-index: 1;
   top: 21px;
-  left: 65px;
+  left: calc(50% - 693px);
   display: block;
 }
 
@@ -308,6 +308,32 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   margin-right: 5px;
+}
+
+.hero{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url("../img/toti.png");
+  background-position: calc(50% + 540px);
+  background-repeat: no-repeat;
+}
+
+.hero-box{
+  max-width: 447px;
+  margin-left: 50px;
+}
+
+.hero-heading{
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 64px;
+}
+
+.hero-text{
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
 }
 
 @media
